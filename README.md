@@ -1,4 +1,4 @@
-# MemeCreator
+# GameofThroneAPI
 
 This is a fronT end angular app consumers A GameofThrone API from "https://thronesapi.com/api/v2/Characters"
 
