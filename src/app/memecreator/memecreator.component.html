@@ -1,0 +1,39 @@
+<h1>Game of Thrones API</h1>
+
+<style>
+    table,td,th{
+        border: 1px solid black;
+        
+    }
+    table{
+        border-collapse: collapse;
+        width: 90%;
+    }
+    th{
+        height: 50px;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Full Name</th>
+        <th>Title</th>
+        <th>Family</th>
+        <th>Image</th>
+        <th>Image Url</th>
+
+    </tr>
+    <tr *ngFor = "let meme of lstMemes"> 
+        <td>{{meme.id}}</td> 
+        <td>{{meme.firstName}}</td>
+        <td>{{meme.lastName}}</td>
+        <td>{{meme.fullName}}</td>
+        <td>{{meme.title}}</td>
+        <td>{{meme.family}}</td>
+        <td>{{meme.image}}</td>
+        <td><img src= {{meme.imageUrl}}></td>
+    </tr>
+</table>
